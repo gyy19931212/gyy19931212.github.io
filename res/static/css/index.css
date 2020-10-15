@@ -17,8 +17,7 @@ a:hover{color: #fabe00}
 a:active{color: #FFFFFF}
 
 .header_box{height: 80px; line-height: 80px; border-bottom: 1px solid gray;background-color: #221814; color: #FFFFFF;}
-.header,
-.policy{max-width: 1200px; margin: 0 auto; position: relative; height: 100%;}
+.header{max-width: 1200px; margin: 0 auto; position: relative; height: 100%;}
 .header h1{display: inline-block; padding-left: 30px; color: #fabe00; position: absolute; top: 0px; left: 80px; font-size: 17px;}
 .header .logo-image{ display: inline-block; width: 70px; height: 70px; margin-top: 5px;}
 
@@ -28,10 +27,11 @@ a:active{color: #FFFFFF}
 .app-header-menuicon{display: inline-block; position: absolute; top: 2px; width: 80px; height: 80px; cursor: pointer; text-align: center;}
 
 .content{max-width: 100%; margin: 0 auto;}
+.content .policy{max-width: 1200px; margin: 0 auto; position: relative; height: 100%;}
 .content .title{padding: 20px 0; text-align: center;  background-color: #221814; color: #FFFFFF;}
 .image-beian{vertical-align: bottom;}
 
-.content h1{font-size: 48px;}
+.content h1{font-size: 36px;}
 .content .layui-row{padding:50px 0; max-width: 1200px; margin:0 auto;}
 .img-txt {margin: 0 20px;}
 .img-txt h3{margin-top: 10px;}
