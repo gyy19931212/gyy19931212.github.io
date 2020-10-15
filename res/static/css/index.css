@@ -9,6 +9,7 @@ body{font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;}
 .pb50{
   padding:0 0  50px 0;
 }
+p{font-size: 14px}
 a{color: #FFFFFF}
 a:link{color: #FFFFFF}
 a:visited{color: #FFFFFF}
@@ -16,7 +17,8 @@ a:hover{color: #fabe00}
 a:active{color: #FFFFFF}
 
 .header_box{height: 80px; line-height: 80px; border-bottom: 1px solid gray;background-color: #221814; color: #FFFFFF;}
-.header{max-width: 1200px; margin: 0 auto; position: relative; height: 100%;}
+.header,
+.policy{max-width: 1200px; margin: 0 auto; position: relative; height: 100%;}
 .header h1{display: inline-block; padding-left: 30px; color: #fabe00; position: absolute; top: 0px; left: 80px; font-size: 17px;}
 .header .logo-image{ display: inline-block; width: 70px; height: 70px; margin-top: 5px;}
 
@@ -29,9 +31,8 @@ a:active{color: #FFFFFF}
 .content .title{padding: 20px 0; text-align: center;  background-color: #221814; color: #FFFFFF;}
 .image-beian{vertical-align: bottom;}
 
-.content p{padding: 6px 0;font-size: 20px}
 .content h1{font-size: 48px;}
-.content .layui-row{padding:100px 0; max-width: 1200px; margin:0 auto;}
+.content .layui-row{padding:50px 0; max-width: 1200px; margin:0 auto;}
 .img-txt {margin: 0 20px;}
 .img-txt h3{margin-top: 10px;}
 .img-txt .qr-wrap{width: 200px; height: 200px; margin: 0 auto; margin-top: 100px;}
