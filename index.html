@@ -1,20 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>reCAPTCHA demo: Simple page</title>
-    <script src="https://www.google.com/recaptcha/api.js?render=6Lcdid4pAAAAAMS3lrXRWGMdBN5Nydo0oF4mKUnY"></script>
-</head>
-<body>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="./res/layui/layui.js"></script>
+		<link rel="stylesheet" type="text/css" href="./res/layui/css/layui.css">
+		<link rel="stylesheet" type="text/css" href="./res/static/css/index.css">
+	</head>
 
-</body>
+	<body>
+		<!-- header -->
+		<div class="header_box">
+			<div class="header">
+				<ul class="app-header">
+					<li class="app-header-menuicon">
+						<i class="layui-icon layui-icon-more-vertical"></i>
+					</li>
+				</ul>
+				<input class="logo-image" type="image" src="res/layui/images/uct/ic_login_pop.png" />
+				<h1 class="logo">壹速通</h1>
+                
+			</div>
+		</div>
+		<!-- end-header -->
 
-<script>
-    grecaptcha.ready(function() {
-        grecaptcha.execute('6Lcdid4pAAAAAMS3lrXRWGMdBN5Nydo0oF4mKUnY', {action: 'submit'}).then(function(token) {
-            // Add your logic to submit to your backend server here.
-            alert(token)
-        });
-    });
-</script>
+		<!-- 中间数据 -->
+		<div class="content">
+
+			<div class="policy">
+				<h1>隐私政策</h1>
+
+				<p>
+					<br/>一、我们尊重用户的隐私权<br/>
+					我们承诺遵守相关的法律法规，保护用户的隐私权。我们将尽一切努力确保您的个人信息不会被未经授权的访问、使用或泄露。
+				</p>
+
+				<p>
+					<br/>二、我们收集的信息<br/>
+					为了提供更好的服务和用户体验，我们会收集一些必要的信息。具体包括：<br/>
+					位置信息：例如您所在的城市、街道等信息。<br/>
+					设备信息：IMEI、设备MAC地址和软件安装列表、通讯录和短信等信息<br/>
+					第三方SDK：为了给您提供更好的系统体验，我们会接入第三方SDK进行一些设备数据采集，如IMEI<br/>
+					其他使用数据：例如您使用APP的时间、频率、行为等。
+
+				</p>
+
+				<p>
+					<br/>三、我们如何使用这些信息<br/>
+
+					我们应用中集成了<br/>
+					[极光]SDK在后台获取IMSI,OAID等信息<br/>
+					(b)为提供您所要求的产品和服务，而必须和第三方分享您的个人信息；<br/>
+					com.tencent.smtt(TBS腾讯浏览服务;腾讯浏览服务;腾讯X5浏览器;腾讯浏览器)<br/>
+
+					自启动和关联启动说明<br/>
+					1、为确保本应用处于关闭或后台运行状态下可正常接收到客户端推送的广播信息，本应用须使用(自启动)能力，将存在一定频率通过系统发送广播唤醒本应用自启动或关联启动行为，是因实现功能及服务所必要的。<br/>
+					2、当您打开壹速通app内容类推送消息，在征得您的明确同意后，会跳转壹速通app打开相关内容。在未征得您同意的情况下，则不会有关联启动。<br/>
+					3、当您打开壹速通app内部下载的文件后，会关联启动第三方APP.<br/>
+					我们的产品在应用运行期间需要收集您的设备唯一识别码（IMEI/android ID/DEVICE_ID/IDFA、SIM 卡 IMSI 信息）以提供统计分析服务，和为您推送订单状态等消息，并通过应用启动数据及异常错误日志分析改进性能和用户体验，为用户提供更好的服务。<br/>
+
+
+					我们会根据以下目的收集和使用您的个人信息：<br/>
+					（一）收集IMEI、IMSI、Android_id、MAC地址、安装列表信息范围、方式和目的为了保障软件与服务的安全运行、运营的质量及效率，我们会收集你的设备的硬件型号、操作系统版本号、设备标识符（Android如IMEI、AndroidID、OAID、IMSI、ICCID、MEID、硬件序列号）、网络设备硬件地址（MAC地址）、IP 地址、WLAN接入点（如SSID，BSSID）、蓝牙（Bluetooth）、软件版本号、网络接入方式、类型、状态、网络质量数据、操作、使用、服务日志。为识别您的设备ID并预防恶意程序及反作弊、提高服务安全性、保障运营质量及效率，我们会收集您的设备信息（包括IMEI、MEID、Android ID、IMSI、GUID、MAC地址）、您安装的应用信息或运行中的进程信息。<br/>
+					（二）收集已安装应用列表信息范围、方式和目的
+					您在使用我们的服务时，若您想分享您喜欢的内容至第三方App，我们需要判断是否安装了第三方App，以便为您提供正确的分享功能。 我们采用合并链路技术进行技术推送，在启动App初始化后，我们会读取已安装应用列表，当一个设备有多个APP的推送链路同时活跃时，我们会随机合并成一条链路，以达到为您省电省流量的目的，因此需获得应用列表信息。<br/>
+					（三）收集硬件序列号信息范围、方式和目的
+					为了保障软件与服务的安全运行、运营的质量及效率，我们会收集你的硬件型号、操作系统版本号、设备标识符；不同的标识符在有效期、是否可由用户重置以及获取方式方面会有所不同）、网络设备硬件地址（MAC地址）、硬件序列号、IP 地址、WLAN接入点（如SSID，BSSID）、蓝牙（Bluetooth）、软件版本号、网络接入方式、类型、状态、网络质量数据、操作、使用、服务日志信息等数据。<br/>
+					（四）收集设备传感器信息范围、方式和目的
+					在为你提供同城频道内容或者与设备所在位置相关的内容或服务时，经过你的授权，我们会使用与本服务相关的地理位置信息（如精确定位信息、WLAN接入点、蓝牙和基站、传感器信息）。其中精确定位信息是个人敏感信息，若你拒绝授权位置权限会影响定位的准确性，但不会影响其他功能与服务的正常使用，我们也仅会基于网络信息（如IP）对应的城市及/或区县向你展示可能相关的内容或服务。<br/>
+					（五）收集IP地址信息范围、方式和目的
+					为了保障软件与服务的安全运行、运营的质量及效率，我们会收集你的硬件型号、操作系统版本号、设备标识符（Android如IMEI、AndroidID、OAID、IMSI、ICCID、GAID、MEID，iOS如IDFV、IDFA；不同的标识符在有效期、是否可由用户重置以及获取方式方面会有所不同）、网络设备硬件地址（MAC地址）、硬件序列号、IP 地址、WLAN接入点（如SSID，BSSID）、蓝牙（Bluetooth）、基站、软件版本号、网络接入方式、类型、状态、网络质量数据、操作、使用、服务日志、传感器信息等数据。为就近分配服务器，提高用户整体使用和访问速度，我们将收集您的IP地址。<br/>
+					（六）收集本地存储权限信息范围、方式和目的
+					基于读取、写入外置存储卡的附加服务：您可以在开启本地存储权限后，使用该功能上传您关心的城市信息，以实现更好的获取你关系城市天气信息的功能。<br/>
+					（七）收集位置信息权限信息范围、方式和目的
+					为了统计和分析产品的使用，提供更好的优化和建议，并通过地理位置校准报表数据准确性，提供基础反作弊能力，需要获取设备信息，MAC地址，位置信息，网络信息。
+					为了提升我们的服务表现、效率和功能，经您授权我们会收集您在使用我们服务过程中产生的位置信息。当您通过系统授权开启移动设备的定位功能并使用基于位置提供的服务时，我们会收集和使用您的位置信息以便为您规划到达组织机构注册地址所在位置的路线。我们会使用有关技术获取您的位置信息（准确度会有所不同），这些技术包括 IP 地址、GPS。您可以在移动设备的系统中关闭定位服务停止我们对您所在位置信息的收集，但可能因此无法使用我们基于地理位置为您提供的服务，或者无法达到相关服务的预期效果。<br/>
+					发送您感兴趣的广告和促销信息。<br/>
+					改进我们的产品和服务。<br/>
+					进行市场调研和分析。<br/>
+					保护您的账户和安全。<br/>
+					例如：腾讯TBS浏览服务获取SD卡数据、极光SDK获取Android ID、腾讯TBS浏览服务获取IMSI、腾讯TBS浏览服务获取Android ID等的目的方式范围、腾讯TBS浏览服务获取IMSI、腾讯TBS浏览服务获取Android ID的行为。<br/>
+				</p>
+
+				<p>
+					<br/>四、我们如何保护您的信息<br/>
+					我们会采取一系列措施来保护您的信息，包括：<br/>
+					加密存储和传输您的信息。<br/>
+					对访问您的信息的员工进行严格的授权和监管。<br/>
+					定期更新和审查我们的安全措施和技术。<br/>
+					在必要时与第三方合作，确保您的信息得到充分的保护。<br/>
+				</p>
+
+				<p>
+					<br/>五、您如何访问和更正您的信息<br/>
+					您可以随时访问和更正您的信息，方法如下：<br/>
+					登录您的账户。<br/>
+					查看并更新您的个人信息。<br/>
+					如果您发现任何错误或不一致，请及时联系我们。<br/>
+				</p>
+
+				<p>
+					<br/>六、我们的责任和义务<br/>
+
+					我们有责任和义务保护您的个人信息，如果您发现我们有任何不当行为，欢迎随时联系我们。我们将尽一切努力解决您的问题并保护您的隐私权。<br/>
+
+
+				</p>
+
+				<p>
+					<br/>开发者信息：上海壹优速信息科技有限公司<br/>
+					开发者联系方式：<label style="color: #0000FF">khg090076@yimidida.com</label>
+					<br/>
+					<br/>
+
+				</p>
+
+			</div>
+
+			<div class="title">
+				Copyright © 2015-2020 壹米滴答供应链集团有限公司. All rights reserved. 沪ICP备15046748号
+				<input class="image-beian" type="image" src="res/layui/images/beian.png" />
+				<a>沪公网安备 42011202000156号</a>
+
+				<!-- <a href="https://www.beian.gov.cn/portal/registerSystemInfo?COLLCC=3484918587&recordcode=31011802001324">沪公网安备 42011202000156号</a> -->
+
+			</div>
+
+		</div>
+
+		<script>
+			layui.use('carousel', function() {
+				var carousel = layui.carousel;
+				//建造实例
+				carousel.render({
+					elem: '#test1',
+					width: '100%' ,//设置容器宽度
+					height: '500px',
+					arrow: 'always' //始终显示箭头
+					// ,anim: 'updown' //上下切换 ，左右切换
+				});
+			});
+		</script>
+	</body>
+
+
 
 </html>
